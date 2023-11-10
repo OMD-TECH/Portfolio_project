@@ -1,0 +1,26 @@
+/* 
+
+Use Relative Units: Instead of using fixed units like pixels,
+use relative units such as percentages,
+ems,
+or rems for sizing elements. This allows your layout to adapt to different screen sizes. Flexbox and Grid Layout: Utilize CSS flexbox and grid layout to create flexible and responsive layouts without the need for complex positioning. These layout models make it easier to create responsive designs. Avoid Absolute Positioning: Minimize the use of absolute positioning in your CSS,
+as it can lead to layout issues on different screen sizes. Use relative positioning or other layout techniques whenever possible. Fluid Typography: Implement fluid typography by using viewport units (vw, vh) to size text elements. This ensures that your text scales proportionally with the viewport size. Test on Multiple Devices: Regularly test your responsive design on various devices and screen sizes to ensure it looks and functions as expected. Mobile-First Approach: Start your design with the smallest screen size in mind and progressively add styles for larger screens. This "mobile-first"approach ensures that your design is optimized for smaller screens and then enhanced for larger ones. Prioritize Content: Ensure that the most important content is visible and accessible on all screen sizes. You may need to adjust the layout and the order of elements to achieve this. Keep Styles Simple: Aim for simplicity in your CSS. Complex positioning and styling can make it harder to maintain and troubleshoot responsive designs. Use Frameworks and Libraries: Consider using CSS frameworks or libraries like Bootstrap or Foundation,
+which provide responsive components and grids out of the box. By following these guidelines,
+you can make your CSS code more responsive and adaptable to various screen sizes,
+leading to a better user experience on different devices. User can i send the code, */
+
+
+.website-design-pcw .hero-coh .ellipse {
+    width: 20%;
+    /* Use relative units for width */
+    padding-top: 20%;
+    /* Maintain aspect ratio */
+    position: absolute;
+    filter: blur(10%);
+    background-color: rgba(234, 120, 157, 0.5);
+    border-radius: 50%;
+    /* Create a circle */
+    /* Adjust left and top as needed */
+}
+
+/* Add styles for other elements in a similar manner */
