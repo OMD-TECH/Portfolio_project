@@ -133,7 +133,8 @@ body {
 }
 
 .image_frame-3 {
-  display: block;
+  display: grid;
+  place-content: center;
   height: auto;
   width: 100%;
   position: relative;
@@ -257,20 +258,25 @@ body {
 }
 
 .website-design .icon-features-y4T {
-  padding: 5rem;
+  padding: 2.5rem;
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
   border-top: solid 0.35rem #ffffff;
   border-bottom: solid 0.35rem #ffffff;
   background-color: #1f1a59;
   font-weight: bold;
-  font-size: 1.75rem;
-  line-height: 1.2575;
+  font-size: 2.5vw;
   color: #ffffff;
-  flex-direction: row;
+}
+
+@media screen and (max-width: 768px) {
+  .website-design .icon-features-y4T {
+    grid-template-columns: 1fr 1fr;
+
+  }
 }
 
 .website-design .icon-features-y4T .client-benefits-U1D p {
@@ -948,51 +954,39 @@ body {
 }
 
 .about-me {
-  padding: 2rem;
+  padding: 3rem;
   width: 100%;
   height: auto;
   border: solid 0.1rem #ffffff;
   background-color: #14104b;
   color: whitesmoke;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .auto-group {
-  padding: 2rem 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-@media screen and (max-width: 567px) {
-  .auto-group {
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .border {}
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .auto-group {
-    flex-direction: column;
-  }
-}
 
-@media screen and (max-width: 768px) {}
+  .auto-group {
+    grid-template-columns: 1fr;
+  }
+
+}
 
 .auto-group-1 {
   padding: 2rem;
   width: 100%;
-  margin-right: 1rem;
 }
 
 .h2-copy {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: start;
 }
 
@@ -1010,8 +1004,8 @@ body {
 }
 
 .welcome-to-our-vibrant-community {
-  text-align: justify;
   opacity: 0.75;
+  font-size: 16px;
 }
 
 .frame {
@@ -1025,6 +1019,7 @@ body {
 
 .frame .text {
   opacity: .75;
+  font-size: 16px;
 }
 
 .mingcute-check-fill {
@@ -1042,9 +1037,13 @@ body {
   display: grid;
   color: #ea789d;
   place-content: center;
+  font-size: 16px;
 }
 
-.auto-group-2 {}
+.auto-group-2 {
+  display: grid;
+  place-content: center;
+}
 
 .auto-group-2 img {
   border-top-left-radius: 2rem;
@@ -1220,26 +1219,47 @@ body {
   border-top: solid 0.35rem #ffffff;
   border-bottom: solid 0.35rem #ffffff;
   background-color: #14104b;
-  padding: 5rem;
+  padding: 4rem;
 }
 
 .auto-group-contact {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   color: white;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .contact-me {
   color: rgba(255, 255, 255, 0.788);
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: clamp(16px, 4vw, 20px);
+}
+
+@media screen and (max-width: 1024px) {
+  .auto-group-contact {
+    grid-template-columns: 1fr;
+  }
+}
+
+.auto-group-contact .h2-copy-gbH {
+  margin-left: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .drop-a-message {
   font-weight: bold;
-  font-size: 2.5rem;
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+.loremmmm {
+  font-size: 16px;
+}
+
+.auto-group-contact .image {
+  display: grid;
+  place-content: center;
 }
 
 .auto-group-contact .image img {
@@ -1247,21 +1267,25 @@ body {
   width: 100%;
 }
 
-.auto-group-contact .h2-copy-gbH {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-  gap: 1.5rem;
+.icon-im {
+  width: 15px;
+  height: 15px;
 }
 
-.icon-im {
-  width: 1rem;
+.smallt {
+  font-size: 16px;
+}
+
+.frame-4-sZH {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .frame-11 {
   display: flex;
-  gap: .5rem;
+  gap: 15px;
+  font-size: 16px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -1292,7 +1316,6 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
-
 }
 
 .follow-me {
