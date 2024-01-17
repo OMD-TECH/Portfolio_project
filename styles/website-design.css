@@ -35,16 +35,11 @@ body {
 }
 
 .hero-coh {
+  height: auto;
   width: 100%;
-  height: 100vh;
   background-color: #14104b;
 }
 
-@media screen and (max-width:567px) {
-  .website-design .hero-coh {
-    height: auto;
-  }
-}
 
 .navbar {
   display: flex;
@@ -92,11 +87,24 @@ body {
   border-top: 3px solid #ea789d;
 }
 
-/* .auto-group-vdcb-fzF a:not(:visited) {
-  color: gray;
-} */
+.bar {
+  display: none;
+}
 
-/* color: #e9779d; */
+@media (max-width: 845px) {
+  .auto-group-vdcb-fzF .off {
+    display: none;
+  }
+
+  .frame-1-bUb {
+    height: 86.69px;
+  }
+
+  .bar {
+    display: block;
+  }
+}
+
 .resume {
   font-size: 19px;
   font-weight: 800;
@@ -130,6 +138,7 @@ body {
   width: 100%;
   height: auto;
   font-weight: 700;
+  padding: 1rem;
 }
 
 .image_frame-3 {
@@ -140,7 +149,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .home-content {
     grid-template-columns: 1fr;
     /* One column for mobile view */
@@ -1155,32 +1164,34 @@ body {
   width: 100%;
   height: auto;
   background-color: #14104b;
-  padding: 4rem 8rem;
+  padding: 3rem 5rem;
 
 }
 
 .auto-group-cyzp-wsM {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
 }
 
-.group-7-dn7 {
-  flex: 60%;
+@media screen and (max-width: 768px) {
+  .auto-group-cyzp-wsM {
+    grid-template-columns: 1fr;
+  }
 }
 
 .frame-7-PFV {
-  max-width: 70%;
   color: white;
   font-size: 1rem;
+  display: grid;
+  place-content: center;
 }
 
 .frame-8-6Qo {
-  border: 2px solid white;
+  border: 4px solid white;
   border-radius: 3.5rem;
   padding: 1.75rem;
-  background-color: #2c2f48;
+  background-color: #ea789d;
 }
 
 .johnny-adnan-m9Z {
@@ -1194,7 +1205,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  flex: 40%
 }
 
 .trusted-by-clients-4ab {
@@ -1209,8 +1219,8 @@ body {
 }
 
 .ph-flow-arrow-fill-wy9 {
-  height: auto;
-  width: 100%;
+  height: 165.67px;
+  width: 207.5px;
 }
 
 .contact-us {
@@ -1316,6 +1326,23 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 2.5rem;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width:845px) {
+  .frame-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .frame-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 .follow-me {
@@ -1326,19 +1353,4 @@ body {
 
 .icon {
   width: 1.5rem;
-}
-
-
-@media screen and (max-width: 768px) {
-
-  /* Hide the navigation links and display a menu icon */
-  .menu-links {
-    display: none;
-    /* Hide the navigation links */
-  }
-
-  .menu-icon {
-    display: block;
-    /* Show the menu icon */
-  }
 }
