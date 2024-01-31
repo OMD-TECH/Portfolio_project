@@ -1,13 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
-  let navBarLinks = document.querySelectorAll("auto-group-vdcb-fzF a");
-  navBarLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      navBarLinks.forEach((link) => {
-        link.classList.remove("active");
-      });
+  const mobileView = document.getElementById("mobile-view");
+  const navList = document.querySelector(".auto-group-vdcb-fzF");
 
-      link.classList.add("active");
-    });
+  mobileView.addEventListener("click", () => {
+    navList.classList.toggle("show");
+    mobileView.classList.toggle("active");
   });
 });
