@@ -204,7 +204,7 @@ body {
 .get {
   font-size: clamp(12px, 4vw, 20px);
   color: #ea789d;
-  border: .175rem solid #ea789d;
+  border: .2rem solid #ea789d;
   display: grid;
   place-content: center;
   padding: 0.75rem;
@@ -702,7 +702,6 @@ body {
   background-color: #14104b;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
 }
 
 .skill-icons-xd-RMy {
@@ -1025,8 +1024,10 @@ body {
 }
 
 .follow-me {
+  margin-top: 3rem;
   white-space: nowrap;
   font-size: clamp(16px, 4vw, 22px);
+  transform: rotateZ(-90deg);
 }
 
 .resume {
