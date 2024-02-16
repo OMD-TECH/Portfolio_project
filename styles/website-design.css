@@ -90,6 +90,26 @@ body {
   cursor: pointer;
 }
 
+.addons {
+  position: absolute;
+  width: 10rem;
+}
+
+.effect-contact-top {
+  top: 0;
+  left: 0;
+}
+
+.effect-contact-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.polygon-1-DoV {
+  bottom: 0;
+  right: 0;
+}
+
 .resume-up {
   font-size: clamp(14px, 4vw, 19px);
   font-weight: 800;
@@ -597,9 +617,10 @@ body {
 .auto-group-2 {
   display: grid;
   place-content: center;
+  position: relative;
 }
 
-.auto-group-2 img {
+.auto-group-2 .college-projectg {
   border-top-left-radius: 2rem;
   border-bottom-right-radius: 2rem;
   height: auto;
@@ -778,16 +799,43 @@ body {
 .auto-group-cyzp-wsM {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 4rem;
 }
 
 .lorem-ipsum {
   font-size: clamp(12px, 4vw, 18px);
 }
 
+.invisible-box {
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 370px;
+  width: 550px;
+}
+
+.frame-7-PFV {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 370px;
+  width: 550px;
+  transform: rotateZ(10deg);
+  background-color: #ea789d;
+  opacity: .7;
+  border: 4px solid white;
+  border-radius: 3.5rem;
+}
+
 .frame-8-6Qo {
-  height: 300px;
-  width: 450px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: none;
+  font-size: 1rem;
+  color: white;
+  height: 370px;
+  width: 550px;
   border: 4px solid white;
   border-radius: 3.5rem;
   padding: 1.75rem;
@@ -829,13 +877,6 @@ body {
     font-size: 0.65rem;
   }
 
-}
-
-.frame-7-PFV {
-  color: white;
-  font-size: 1rem;
-  display: grid;
-  place-content: center;
 }
 
 .trusted {
@@ -914,9 +955,10 @@ body {
 .auto-group-contact .image {
   display: grid;
   place-content: center;
+  position: relative;
 }
 
-.auto-group-contact .image img {
+.auto-group-contact .image .get-touch-concept {
   height: auto;
   width: 100%;
 }
