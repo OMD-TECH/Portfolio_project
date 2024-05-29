@@ -1,0 +1,43 @@
+import React from "react";
+import logo from "../assets/logo-X99.png";
+import linkedin from "../assets/mdi-linkedin.png";
+import twitter from "../assets/mdi-twitter.png";
+import fb from "../assets/ic-baseline-facebook.png";
+import github from "../assets/mdi-github-pmd.png";
+import upwork from "../assets/bxl-upwork.png";
+
+const Footer = () => {
+  return (
+    <div className="bg-[#5A0B4D] w-full h-auto flex items-center justify-between">
+      <img className="object-cover h-20 w-20" src={logo} />
+      <div className="flex items-center justify-center gap-4">
+        <p className="text-white text-nowrap font-bold">Follow Us</p>
+        <div className="flex items-center justify-between gap-4">
+          <a href="">
+            <img className="w-8" src={linkedin} />
+          </a>
+          <a
+            href="https://x.com/omd_tech?t=nRuAS2GNFx0_5THQIKx7wg&s=09"
+            target="_blank"
+          >
+            <img className="w-8" src={twitter} />
+          </a>
+          <a href="">
+            <img className="w-8" src={fb} />
+          </a>
+          <a href="">
+            <img className="w-8" src={github} />
+          </a>
+          <a href="">
+            <img className="w-8" src={upwork} />
+          </a>
+        </div>
+      </div>
+      <button className="text-[#5A0B4D] bg-white py-3 px-6 rounded-xl mr-4">
+        Admin Sign In
+      </button>
+    </div>
+  );
+};
+
+export default Footer;
