@@ -17,7 +17,7 @@ const Services = () => {
         <div className="md:col-span-2 col-span-1 grid grid-cols-1 md:grid-cols-2 gap-4">
           {servicesData.map((item) => (
             <div
-              className="w-full h-auto flex items-center justify-center flex-col shadow-lg rounded-xl my-4 p-4"
+              className="w-full h-auto flex items-center justify-center flex-col shadow-lg rounded-xl my-4 p-4 hover:rotate-45 transform duration-700 cursor-pointer"
               style={{
                 backgroundColor: "#E4EEFA",
                 backgroundPosition: "center",

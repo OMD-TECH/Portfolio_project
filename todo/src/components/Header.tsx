@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { headerData } from "../utils/headerData";
 import logo from "../assets/logo.png";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { disablePageScroll, enablePageScroll } from "scroll-lock";
+//import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -11,16 +11,16 @@ const Header = () => {
     setNavbar(!navbar);
     if (navbar) {
       setNavbar(false);
-      enablePageScroll();
+      // enablePageScroll();
     } else {
       setNavbar(true);
-      disablePageScroll();
+      // disablePageScroll();
     }
   };
 
   const handleClick = () => {
     if (!navbar) return;
-    enablePageScroll();
+    // enablePageScroll();
     setNavbar(false);
   };
 
@@ -57,7 +57,7 @@ const Header = () => {
           Resume
         </button>
         {navbar && (
-          <button className="mr-4 block md:hidden" onClick={onhandleNavbar}>
+          <button className="mr-4" onClick={onhandleNavbar}>
             OPEN
           </button>
         )}

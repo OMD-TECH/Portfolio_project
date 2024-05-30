@@ -1,4 +1,7 @@
 import osim from "../assets/ukakk.jpg";
+import essy from "../assets/essy.jpg";
+import uka from "../assets/my_photo.jpg";
+import bot from "../assets/bot.jpg";
 
 export const headerData = [
   {
@@ -74,5 +77,26 @@ export const workersData = [
     skill: "Frontend Web Developer",
     desc: "I’ve used quite a number of portfolio's, but Selar’s amazing! They’re truly interested in your growth and are constantly listening to the customers and tweaking and fine tuning their app.   They do the heavy lifting Totally recommend them!",
     avatar: osim,
+  },
+  {
+    id: 1,
+    name: "Joshua Osim",
+    skill: "Fullstack Developer",
+    desc: "I've struggled with managing social media for my business for ages. Then I found [Platform Name]! It's a game-changer. Their scheduling tools are top-notch, and the analytics are incredibly insightful. Plus, their customer support is fantastic. They go above and beyond to help you succeed!",
+    avatar: uka,
+  },
+  {
+    id: 2,
+    name: "Okpan Uka",
+    skill: "Mobile Developer",
+    desc: "I've bounced around between several project management tools, but nothing compares to [Software Name]. It keeps my team organized, on track, and accountable. The collaboration features are seamless, and the communication tools are built-in, making it easy for everyone to stay in the loop. [Software Name] has been a lifesaver for our team's productivity. Highly recommend!",
+    avatar: bot,
+  },
+  {
+    id: 3,
+    name: "Osim Josh",
+    skill: "Software Engineer",
+    desc: "Setting up an online store felt overwhelming until I discovered [Platform Name]. Their platform is incredibly user-friendly, even for non-tech-savvy folks like me. They offer a wide range of features, from product listings to secure payment processing. Plus, their customer support is outstanding. If you're looking to launch an e-commerce store with minimal hassle, [Platform Name] is the way to go!",
+    avatar: essy,
   },
 ];
