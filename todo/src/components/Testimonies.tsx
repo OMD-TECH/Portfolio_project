@@ -4,12 +4,12 @@ import fill from "../assets/ph-flow-arrow-fill.png";
 const Testimonies = () => {
   return (
     <div className="w-full h-auto py-10 md:py-20 px-10 md:px-16 grid place-items-center borber-b border-white">
-      <div className="flex items-start justify-between flex-col md:flex-row gap-16">
+      <div className="flex items-start justify-between flex-col lg:flex-row gap-16">
         <div className="grid place-content-center">
-          <div className="hidden md:block relative my-8 h-[370px] w-[550px]">
-            <div className="absolute top-0 left-0 h-[370px] w-[550px] bg-white rotate-12 opacity-40 rounded-3xl"></div>
-            <div className="absolute top-0 left-0 transform-none h-[370px] w-[550px] p-10 bg-white rounded-3xl text-[#5A0B4D]">
-              <p className="">
+          <div className="block relative my-8 w-[340px] h-[330px] sm:w-[450px] md:h-[370px] lg:w-[550px]">
+            <div className="absolute top-0 left-0 w-[340px] h-[330px] sm:w-[450px] md:h-[370px] lg:w-[550px] bg-white rotate-12 opacity-40 rounded-3xl"></div>
+            <div className="absolute top-0 left-0 transform-none w-[340px] h-[330px] sm:w-[450px] md:h-[370px] lg:w-[550px] p-8 sm:p-10 bg-white rounded-3xl text-[#5A0B4D]">
+              <p className="text-xs sm:text-sm lg:text-base">
                 “lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
                 lorem ipsum lorem ipsum lorem em ipsum lorem ipsum lorem ipsum
                 lorem ipsum lorem ipsum.lorem ipsum lorem ipsum lorem ipsum
@@ -18,7 +18,9 @@ const Testimonies = () => {
                 lorem ipsum lorem ipsum lorem ipsum lorem ipsum.lorem ipsum
                 lorem ipsum lorem ipsum lorem ipsum lorem”
               </p>
-              <h1 className="font-bold text-3xl my-2 mx-auto">Johnny Adnan</h1>
+              <h1 className="font-bold text-3xl my-1 sm:my-2 mx-auto">
+                Johnny Adnan
+              </h1>
               <p>Product Manager</p>
             </div>
           </div>

@@ -9,6 +9,10 @@ import arrow from "./maki-arrow.png";
 const Project = () => {
   const [active, setActive] = useState("ui");
 
+  const goToPage = () => {
+    window.location.href = "/projects";
+  };
+
   const handleClick = (value: string) => {
     setActive(value);
   };
@@ -66,7 +70,10 @@ const Project = () => {
         {active === "data" && <Data active={active} />}
         {active === "graph" && <Graph active={active} />}
         {active === "copy" && <Copy active={active} />}
-        <div className="text-white font-bold flex items-center justify-center gap-4">
+        <div
+          className="text-white font-bold flex items-center justify-center gap-4"
+          onClick={goToPage}
+        >
           <p className="hover:cursor-pointer hover:text-[#f7b6ca] transition-colors duration-300 ease-in-out">
             See All Projects
           </p>

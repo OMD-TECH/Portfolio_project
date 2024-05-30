@@ -10,7 +10,7 @@ import link5 from "../assets/mdi-linkedin-tjH.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-center p-5 sm:p-10 md:p-20 gap-10 border-b">
+    <div className="flex flex-col lg:flex-row justify-between items-center p-5 sm:p-10 md:p-20 gap-10 border-b">
       <div className="font-bold flex flex-col justify-start items-start gap-6 md:gap-10">
         <p className="text-2xl text-white">Welcome to</p>
         <p className="text-4xl md:text-6xl text-white">OMD</p>

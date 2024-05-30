@@ -30,24 +30,35 @@ const Contact = () => {
             <p className="text-2xl">Drop A Message</p>
           </div>
           <p className="text-[#181D36] my-2">
-            lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-            ipsum lorem ipsum.
+            Send us a message and we you are step away from getting your
+            answers.
           </p>
-          <div>
-            <div className="flex gap-4 items-center justify-start">
-              <img
-                className="w-4 h-4"
-                src="https://img.icons8.com/?size=100&id=7690&format=png&color=5a0b4d"
+          <div className="">
+            <form
+              action=""
+              className="flex gap-5 items-start justify-between flex-col"
+            >
+              <input
+                className="p-3 rounded-md w-full outline outline-2 active:outline-4 active:outline-blue-200 focus:outline-4 focus:outline-blue-200 outline-gray-400"
+                type="text"
+                placeholder="@email"
               />
-              <p className="text-[#181D36]">Phone number</p>
-            </div>
-            <div className="flex gap-4 items-center justify-start">
-              <img
-                className="w-4 h-4"
-                src="https://img.icons8.com/?size=100&id=7690&format=png&color=5a0b4d"
+              <input
+                className="p-3 rounded-md w-full outline outline-2 active:outline-4 active:outline-blue-200 focus:outline-4 focus:outline-blue-200  outline-gray-400"
+                type="text"
+                placeholder="phone"
               />
-              <p className="text-[#181D36]">example@gmail.com</p>
-            </div>
+              <textarea
+                className="p-3 rounded-md w-full outline outline-2 active:outline-4 active:outline-blue-200 focus:outline-4 focus:outline-blue-200  outline-gray-400"
+                placeholder="message"
+              />
+              <button
+                className="p-4 rounded-md bg-[#5A0B4D] w-full font-bold text-white"
+                type="button"
+              >
+                Send
+              </button>
+            </form>
           </div>
         </div>
       </div>

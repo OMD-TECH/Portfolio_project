@@ -26,9 +26,6 @@ const App: React.FC = () => {
       <Workers />
       <Contact />
       <Footer />
-      {/* <AnchorLink href="home">
-        <div className="h-10 w-10 bg-blue-600 absolute bottom-0 right-0 m-10"></div>
-      </AnchorLink> */}
     </div>
   );
 };
