@@ -10,6 +10,7 @@ import Workers from "./components/Workers";
 import About from "./components/About";
 import Testimonies from "./components/Testimonies";
 import Project from "./components/Project/Project";
+//import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const App: React.FC = () => {
   return (
@@ -25,6 +26,9 @@ const App: React.FC = () => {
       <Workers />
       <Contact />
       <Footer />
+      {/* <AnchorLink href="home">
+        <div className="h-10 w-10 bg-blue-600 absolute bottom-0 right-0 m-10"></div>
+      </AnchorLink> */}
     </div>
   );
 };

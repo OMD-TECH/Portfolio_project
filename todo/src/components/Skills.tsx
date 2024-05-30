@@ -9,7 +9,10 @@ import vector from "../assets/vector.png";
 
 const Skills = () => {
   return (
-    <div className="p-20 w-full h-auto border-b grid grid-cols-4" id="resume">
+    <div
+      className="p-10 md:p-20 place-items-center w-full h-auto border-b grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-0"
+      id="resume"
+    >
       <div className="auto-group-xd">
         <img className="skill-icons-xd-RMy" src={icon} />
       </div>

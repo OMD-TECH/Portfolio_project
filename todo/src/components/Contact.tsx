@@ -7,7 +7,7 @@ import email from "../assets/dashicons-email-alt.png";
 
 const Contact = () => {
   return (
-    <div className="w-full h-auto bg-white p-20" id="contact">
+    <div className="w-full h-auto bg-white p-5 sm:p-10 md:p-20" id="contact">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
         <div className="grid place-content-center relative">
           <img className="h-auto w-full z-20" src={contact} />

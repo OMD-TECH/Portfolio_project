@@ -7,7 +7,7 @@ import effect2 from "../assets/polygon-1-qvP.png";
 const About = () => {
   return (
     <div
-      className="w-full h-auto bg-white text-[#181D36] p-12 md:p-24"
+      className="w-full h-auto bg-white text-[#181D36] p-5 sm:p-10 md:p-24"
       id="about"
     >
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 place-items-center my-8 mx-auto">

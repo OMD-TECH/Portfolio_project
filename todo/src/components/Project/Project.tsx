@@ -14,10 +14,13 @@ const Project = () => {
   };
 
   return (
-    <div className="py-16 px-24 w-full h-auto flex flex-col" id="projects">
+    <div
+      className="py-16 px-5 sm:px-10 md:px-24 w-full h-auto flex flex-col"
+      id="projects"
+    >
       <div className="w-full h-auto">
-        <div className="grid grid-cols-2 text-white">
-          <div className="mr-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 text-white">
+          <div className="mr-0 mb-8 md:mb-0 md:mr-32">
             <h1 className="text-white font-bold">MY WORKS</h1>
             <h1 className="font-bold text-3xl">My Recent Projects</h1>
             <p className="text-white">
@@ -63,7 +66,7 @@ const Project = () => {
         {active === "data" && <Data active={active} />}
         {active === "graph" && <Graph active={active} />}
         {active === "copy" && <Copy active={active} />}
-        <div className="text-[#ea789d] font-bold flex items-center justify-center gap-4">
+        <div className="text-white font-bold flex items-center justify-center gap-4">
           <p className="hover:cursor-pointer hover:text-[#f7b6ca] transition-colors duration-300 ease-in-out">
             See All Projects
           </p>

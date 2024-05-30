@@ -10,7 +10,7 @@ const Services = () => {
 
   return (
     <div
-      className="bg-[#F5F9FD] w-full h-auto p-20 grid place-content-center border-b"
+      className="bg-[#F5F9FD] w-full h-auto p-5 sm:p-10 md:p-20 grid place-content-center border-b"
       id="services"
     >
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 place-items-center p-2">
