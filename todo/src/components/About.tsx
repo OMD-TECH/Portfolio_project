@@ -65,7 +65,7 @@ const About = () => {
         </div>
         <div className="grid place-content-center relative">
           <img className="h-auto w-full z-20" src={college} />
-          <img
+          {/* <img
             className="w-[20%] absolute top-0 left-0 ml-[-40px] mt-[-70px] z-30"
             src={effect1}
           />
@@ -76,7 +76,7 @@ const About = () => {
           <img
             className="w-[20%] absolute top-0 right-0 -mt-[40px] -mr-[50px] z-10"
             src={effect2}
-          />
+          /> */}
         </div>
       </div>
     </div>

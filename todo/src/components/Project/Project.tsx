@@ -5,6 +5,7 @@ import Data from "./data";
 import Graph from "./graph";
 import Copy from "./copy";
 import arrow from "./maki-arrow.png";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const [active, setActive] = useState("ui");
@@ -23,8 +24,8 @@ const Project = () => {
       id="projects"
     >
       <div className="w-full h-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 text-white">
-          <div className="mr-0 mb-8 md:mb-0 md:mr-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 text-white">
+          <div className="mr-0 mb-8 lg:mb-0 lg:mr-28">
             <h1 className="text-white font-bold">MY WORKS</h1>
             <h1 className="font-bold text-3xl">My Recent Projects</h1>
             <p className="text-white">
@@ -70,7 +71,8 @@ const Project = () => {
         {active === "data" && <Data active={active} />}
         {active === "graph" && <Graph active={active} />}
         {active === "copy" && <Copy active={active} />}
-        <div
+        <Link
+          to="/projects"
           className="text-white font-bold flex items-center justify-center gap-4"
           onClick={goToPage}
         >
@@ -78,7 +80,7 @@ const Project = () => {
             See All Projects
           </p>
           <img className="w-6" src={arrow} />
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -6,8 +6,7 @@ import file from "../assets/vscode-icons-file-type-excel.png";
 import react from "../assets/logos-react.png";
 import icon from "../assets/skill-icons-xd.png";
 import vector from "../assets/vector.png";
-
-const Skills = () => {
+const Skill = () => {
   return (
     <div
       className="p-10 md:p-20 place-items-center w-full h-auto border-b grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-0"
@@ -72,4 +71,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default Skill;

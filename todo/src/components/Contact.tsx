@@ -11,7 +11,7 @@ const Contact = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
         <div className="grid place-content-center relative">
           <img className="h-auto w-full z-20" src={contact} />
-          <img
+          {/* <img
             className="w-[20%] absolute top-0 left-0 ml-[-40px] mt-[-70px] z-30"
             src={effect1}
           />
@@ -22,11 +22,11 @@ const Contact = () => {
           <img
             className="w-[20%] absolute top-0 right-0 -mt-[40px] -mr-[50px] z-10"
             src={effect2}
-          />
+          /> */}
         </div>
         <div className="flex flex-col g-4">
           <div className="text-[#181D36] font-bold">
-            <p>CONTACT ME</p>
+            <p>CONTACT US</p>
             <p className="text-2xl">Drop A Message</p>
           </div>
           <p className="text-[#181D36] my-2">

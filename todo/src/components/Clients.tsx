@@ -26,7 +26,7 @@ const Clients = () => {
   ];
   return (
     <div className="py-10 md:py-20 px-5 sm:px-10 md:px-32 border-b">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 font-bold text-white text-2xl place-items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-0 font-bold text-white text-2xl place-items-start">
         <div className="flex justify-center items-center gap-3">
           <div className="">
             <p className="">CLIENT</p>
