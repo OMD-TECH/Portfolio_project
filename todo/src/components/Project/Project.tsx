@@ -58,12 +58,12 @@ const Project = () => {
             >
               Graphic Design
             </p>
-            <p
+            {/* <p
               className="cursor-pointer hover:blur-[1px]"
               onClick={() => handleClick("copy")}
             >
               Copywriting
-            </p>
+            </p> */}
           </div>
         </div>
         {active === "ui" && <UI active={active} />}

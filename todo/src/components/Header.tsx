@@ -37,8 +37,8 @@ const Header = () => {
       <div
         className={
           navbar
-            ? `flex justify-between items-center`
-            : "flex justify-between flex-col items-center transform ease-in-out duration-500 h-screen"
+            ? `md:hidden flex justify-between items-center`
+            : "md:hidden flex justify-between flex-col items-center transform ease-in-out duration-500 h-screen"
         }
       >
         <img className="object-cover h-24 w-24" src={logo} alt="/logo" />
