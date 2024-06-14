@@ -33,7 +33,7 @@ const Project = () => {
               ipsum lorem ipsum.
             </p>
           </div>
-          <div className="font-bold flex items-end justify-between gap-2 text-[1rem]">
+          <div className="hidden font-bold  md:flex items-end justify-between gap-2 text-[1rem]">
             <p
               className="cursor-pointer hover:blur-[1px]"
               onClick={() => handleClick("ui")}
@@ -58,12 +58,44 @@ const Project = () => {
             >
               Graphic Design
             </p>
-            {/* <p
+            <p
               className="cursor-pointer hover:blur-[1px]"
               onClick={() => handleClick("copy")}
             >
               Copywriting
-            </p> */}
+            </p>
+          </div>
+          <div className="font-bold flex md:hidden items-end justify-between gap-2 text-[1rem]">
+            <p
+              className="cursor-pointer hover:blur-[1px]"
+              onClick={() => handleClick("ui")}
+            >
+              UI/UX
+            </p>
+            <p
+              className="cursor-pointer hover:blur-[1px]"
+              onClick={() => handleClick("web")}
+            >
+              Website Dev.
+            </p>
+            <p
+              className="cursor-pointer hover:blur-[1px]"
+              onClick={() => handleClick("data")}
+            >
+              Data Analysis
+            </p>
+            <p
+              className="cursor-pointer hover:blur-[1px]"
+              onClick={() => handleClick("graph")}
+            >
+              Graphic Design
+            </p>
+            <p
+              className="cursor-pointer hover:blur-[1px]"
+              onClick={() => handleClick("copy")}
+            >
+              Copywriting
+            </p>
           </div>
         </div>
         {active === "ui" && <UI active={active} />}

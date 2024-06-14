@@ -26,21 +26,27 @@ const Workers = () => {
       className="h-auto w-full p-5 sm:p-10 md:p-24 flex justify-center items-center border-t flex-col relative"
       id="workers"
     >
-      <h1 className="font-bold text-white text-3xl my-16">Workers</h1>
+      <h1 className="font-bold text-white text-3xl my-8 md:my-16">Workers</h1>
       <div className="flex justify-center items-center">
         {currentObject && (
           <div
             key={currentObject.id}
-            className="bg-white flex flex-col justify-center items-center rounded-xl relative w-full md:w-3/4 p-10 md:p-16 xl:p-20"
+            className="bg-white flex flex-col justify-center items-center rounded-xl relative w-full md:w-3/4 p-5 md:p-16 xl:p-20"
           >
             <img
               src={currentObject.avatar}
               alt="/avatar"
               className="rounded-full p-3 h-40 w-40 object-cover"
             />
-            <p className="pt-6 md:pt-0">{currentObject.desc}</p>
-            <h3 className="font-bold my-4 md:my-8">{currentObject.name}</h3>
-            <p>{currentObject.skill}</p>
+            <p className="pt-6 md:pt-0 text-xs sm:text-sm md:text-xl">
+              {currentObject.desc}
+            </p>
+            <h3 className="font-bold my-4 md:my-8 text-xs sm:text-sm md:text-xl">
+              {currentObject.name}
+            </h3>
+            <p className="text-xs sm:text-sm md:text-xl">
+              {currentObject.skill}
+            </p>
           </div>
         )}
       </div>

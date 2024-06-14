@@ -1,12 +1,5 @@
 import React from "react";
 import hero from "../assets/dedicated-team-abstract-concept-vector-illustration107173-28611-1.png";
-// import effect1 from "../assets/effect.png";
-// import effect2 from "../assets/polygon-1-qvP.png";
-import link1 from "../assets/bxl-upwork-xAK.png";
-import link2 from "../assets/mdi-github.png";
-import link3 from "../assets/ic-baseline-facebook-D35.png";
-import link4 from "../assets/mdi-twitter-qJf.png";
-import link5 from "../assets/mdi-linkedin-tjH.png";
 
 const Hero = () => {
   return (
@@ -27,7 +20,7 @@ const Hero = () => {
       <img
         src={hero}
         alt="hero"
-        className="rounded-tr-[2rem] rounded-bl-[2rem] h-auto w-full lg:w-1/2 "
+        className="rounded-tr-[2rem] rounded-bl-[2rem] h-auto w-full lg:w-1/2"
       />
     </div>
   );

@@ -17,7 +17,7 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {servicesData.map((item) => (
             <div
-              className="w-full h-auto flex items-center justify-center flex-col shadow-lg rounded-xl my-4 p-4 hover:rotate-12 transform duration-700 cursor-pointer"
+              className="w-full h-auto flex items-center justify-center flex-col shadow-lg rounded-xl my-4 p-4 hover:rotate-12 transform duration-500 cursor-pointer card"
               style={{
                 backgroundColor: "#E4EEFA",
                 backgroundPosition: "center",
