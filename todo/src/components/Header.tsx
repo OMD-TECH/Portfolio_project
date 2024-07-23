@@ -23,7 +23,12 @@ const Header = () => {
         <img className="object-cover h-24 w-24" src={logo} alt="/logo" />
         <div className={`flex justify-center items-center gap-8 text-white`}>
           {headerData.map((item) => (
-            <AnchorLink key={item.id} href={item.url} onClick={handleClick}>
+            <AnchorLink
+              className="nav-link"
+              key={item.id}
+              href={item.url}
+              onClick={handleClick}
+            >
               {item.title}
             </AnchorLink>
           ))}
@@ -50,7 +55,12 @@ const Header = () => {
           }
         >
           {headerData.map((item) => (
-            <AnchorLink key={item.id} href={item.url} onClick={handleClick}>
+            <AnchorLink
+              key={item.id}
+              className="nav-link"
+              href={item.url}
+              onClick={handleClick}
+            >
               {item.title}
             </AnchorLink>
           ))}

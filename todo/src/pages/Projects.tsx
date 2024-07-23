@@ -8,16 +8,36 @@ import Copy from "../components/Project/copy";
 const Projects = () => {
   return (
     <div className="bg-[#5A0B4D]">
-      <h1 className="text-center font-bold text-2xl pt-8">UI/UX</h1>
-      <UI active={""} />
-      <h1 className="text-center font-bold text-2xl">Web Development</h1>
-      <Web active={""} />
-      <h1 className="text-center font-bold text-2xl">Data Analytics</h1>
-      <Data active={""} />
-      <h1 className="text-center font-bold text-2xl">Graphics Design</h1>
-      <Graph active={""} />
-      <h1 className="text-center font-bold text-2xl">Copywriting</h1>
-      <Copy active={""} />
+      <div className="pt-5">
+        <h1 className="text-center font-bold text-4xl pt-5 text-white">
+          UI/UX
+        </h1>
+        <UI active={""} />
+      </div>
+      <div>
+        <h1 className="text-center font-bold text-4xl  pt-8 text-white">
+          Web Development
+        </h1>
+        <Web active={""} />
+      </div>
+      <div>
+        <h1 className="text-center font-bold text-4xl pt-8 text-white">
+          Data Analytics
+        </h1>
+        <Data active={""} />
+      </div>
+      <div>
+        <h1 className="text-center font-bold text-4xl pt-8 text-white">
+          Graphics Design
+        </h1>
+        <Graph active={""} />
+      </div>
+      <div>
+        <h1 className="text-center font-bold text-4xl  pt-8 text-white">
+          Copywriting
+        </h1>
+        <Copy active={""} />
+      </div>
     </div>
   );
 };
