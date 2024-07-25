@@ -7,32 +7,38 @@ export const headerData = [
   {
     id: 0,
     title: "Home",
-    url: "#home",
+    url: "/#home",
+    home: "/",
   },
   {
     id: 1,
     title: "Services",
-    url: "#services",
+    url: "/#services",
+    home: "/",
   },
   {
     id: 2,
     title: "Projects",
-    url: "#projects",
+    url: "/#projects",
+    home: "/",
   },
   {
     id: 3,
     title: "About Us",
-    url: "#about",
+    url: "/#about",
+    home: "/",
   },
   {
     id: 4,
     title: "Workers",
-    url: "#workers",
+    url: "/#workers",
+    home: "/",
   },
   {
     id: 5,
     title: "Contact Us",
-    url: "#contact",
+    url: "/#contact",
+    home: "/",
   },
 ];
 

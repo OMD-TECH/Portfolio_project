@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 //import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { FaBars } from "react-icons/fa6";
 import { AiOutlineClose } from "react-icons/ai";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [navbar, setNavbar] = useState(false);
@@ -23,14 +24,14 @@ const Header = () => {
         <img className="object-cover h-24 w-24" src={logo} alt="/logo" />
         <div className={`flex justify-center items-center gap-8 text-white`}>
           {headerData.map((item) => (
-            <AnchorLink
+            <NavLink
               className="nav-link"
               key={item.id}
-              href={item.url}
+              to={item.url}
               onClick={handleClick}
             >
               {item.title}
-            </AnchorLink>
+            </NavLink>
           ))}
         </div>
         <button
@@ -55,14 +56,14 @@ const Header = () => {
           }
         >
           {headerData.map((item) => (
-            <AnchorLink
-              key={item.id}
+            <NavLink
               className="nav-link"
-              href={item.url}
+              key={item.id}
+              to={item.url}
               onClick={handleClick}
             >
               {item.title}
-            </AnchorLink>
+            </NavLink>
           ))}
           <button
             className={`text-[#5A0B4D] bg-white py-3 px-6 rounded-xl mb-4 md:mb-0 md:mr-4`}
